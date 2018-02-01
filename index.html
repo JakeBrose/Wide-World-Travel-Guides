@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    
+<body ng-app="wideWorld">
+    <div ng-controller="bookCtrl">
+        <div ng-repeat="book in books">
+            <h1>{{book.type}}</h1>
+            <h2>{{book.title}}</h2>
+            <h2>{{book.price}}</h2>
+        </div>
+    </div>
+
 
 
 
@@ -16,5 +23,6 @@
 <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
 <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
 <script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/controllers/bookCtrl.js"></script>
 </body>
 </html>
